@@ -10,7 +10,7 @@ Available in app and web-based formats, the 100 Day Challenge offers participant
 > - Dashoard : https://demo.appifylab.com/Daslab/demo-1/dashboard/dashboard2.html#
 
 ## Main focas Frontend
-`
+
 - HTML
 - CSS
 - SASS
