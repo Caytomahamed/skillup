@@ -9,3 +9,20 @@ Available in app and web-based formats, the 100 Day Challenge offers participant
 > - News website : https://demo.appifylab.com/Appinews/index.html
 > - Dashoard : https://demo.appifylab.com/Daslab/demo-1/dashboard/dashboard2.html#
 
+
+## Main focas 
+
+`Frontend `
+> - HTML
+> - CSS 
+> - SASS
+> - Bootstrap
+> - Javascript
+ - React js
+> - Redux && context API
+>- Animation 
+> - Design 
+> - More 
+ - 
+ 
+ 
