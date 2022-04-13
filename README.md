@@ -10,7 +10,8 @@ Available in app and web-based formats, the 100 Day Challenge offers participant
  - E-learn
  - Chatting 
  - Streaming 
- -Travel website
+ - Travel website
+ - Podcasts
 
 ## Main Focus Frontend
 
