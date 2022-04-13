@@ -6,10 +6,10 @@ Available in app and web-based formats, the 100 Day Challenge offers participant
 
 ## Projects i will want to build
 
-> - News website : https://demo.appifylab.com/Appinews/index.html
-> - Dashoard : https://demo.appifylab.com/Daslab/demo-1/dashboard/dashboard2.html#
+` - News website : https://demo.appifylab.com/Appinews/index.html`
+` - Dashoard : https://demo.appifylab.com/Daslab/demo-1/dashboard/dashboard2.html#`
 
-## Main focas Frontend
+## Main Focus Frontend
 
 - HTML
 - CSS
