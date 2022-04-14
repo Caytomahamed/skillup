@@ -37,3 +37,5 @@ Available in app and web-based formats, the 100 Day Challenge offers participant
 
 ## `What did I learn?`
 #### Learned in this project
+
+`mastering a frontEnd`
