@@ -40,6 +40,11 @@ Available in app and web-based formats, the 100 Day Challenge offers participant
 
 `mastering a frontEnd`
 
+## other thing U master
+
+`Photoshope`
+`illustrater `
+`xd `
 ## build a Portfiolo
 
 `Home page `
