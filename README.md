@@ -43,3 +43,5 @@ Available in app and web-based formats, the 100 Day Challenge offers participant
 ## build a Portfiolo
 
 `Home page `
+`about page `
+`contact page `
