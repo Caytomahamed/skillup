@@ -1,23 +1,18 @@
 .row {
   display: flex;
-  margin: 2rem auto;
+  margin: 1rem auto;
   max-width: 95%;
   width: $grid-width;
-  background: $color-primary-soft-1;
-  
-    background-color: blue;
+
   &:not(:last-child) {
     margin-bottom: $grid-gutter-vertical;
   }
 }
 
 [class^="col-"] {
-  padding: $spacing-small;
-  background: url('https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
   background-size: cover;
   color: $color-primary;
-  height: 20rem;
-  
+    background-color: red;
  &:not(:last-child) {
     margin-right: $grid-gutter-horizantal;
   }

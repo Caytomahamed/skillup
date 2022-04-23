@@ -1,0 +1,14 @@
+.header {
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    color: black;
+    
+    &__item {
+      list-style-type: none;
+      font-size: 1.6rem;
+    }
+  }
+}

@@ -5,11 +5,15 @@ $grid-gutter-horizantal: 1.6rem;
 $grid-gutter-vertical: 2rem;
 
 //COLORS
-$color-primary: #FFF;
-$color-primary-soft-1: #f1f1f1;
-$color-primary-soft-2: #f2f2f2;
-$color-secondary: #000;
-$color-tertiary: #ff0000;
+$color-primary: hsl(25, 100%, 94%);
+$color-secondary:  hsl(26, 100%, 55%) ;
+
+$color-blue: hsl(220, 13%, 13%);
+$color-Drark-grayish: hsl(219, 9%, 45%);
+$color-grayish:  hsl(220, 14%, 75%);
+$color-grayish-light: hsl(223, 64%, 98%);
+$color-primary-light: hsl(0, 0%, 100%);
+$color-black: hsl(0, 0%, 0%);
 
 //FONTS
 $font-primary: "Arial";
@@ -40,9 +44,5 @@ $border-radius: 4rem;
 $border-radius: 5rem;
 $border-radius: 6rem;
 
-//SPACING
-$spacing-small: 0.25rem;
-$spacing-small: 0.5rem;
-$spacing-small: 1rem;
 
 //MEDIA QUERIES
