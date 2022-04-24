@@ -4,8 +4,8 @@
     &__main {
       height: 36rem;
       object-fit: cover;
-      margin-left: 4.5rem;
       border-radius: 1rem;
+      box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
     }
     &__sub {
       display: block;
@@ -13,7 +13,8 @@
       object-fit: cover;
       border-radius: 1rem;
       position: relative;
-      margin-top: 2rem 0;
+      margin-top: 1rem;
+      margin-left: -4rem;
 
       &--active {
         border: 2px solid $color-secondary;

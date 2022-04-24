@@ -17,31 +17,40 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="popup">
-      <div class="popup__header">
-        <h2 class="thrid__header ">Cart</h2>
-      </div>
-      <div class="popup__content">
-        <div class="row">
-          <div class="col-1-of-3">
+    <div class="popup--con">
+      <div class="popup">
+        <div class="popup__header">
+          <h2 class="thrid__header">Cart</h2>
+        </div>
+        <div class="popup__content">
+          <div class="col-1-of-4">
             <img
-              src="images/icon-cart-bl.svg"
+              src="images/image-product-1-thumbnail.jpg"
               alt="cart"
-              class="header__profile__cart"
+              class="popup__content__image"
             />
           </div>
-          <div class="col-2-of-3">
-            <p>Fall Limited Edition Sneakers</p>
-            <p>$125.00x3 <span>$375.00</span></p>
-            <img
-              src="images/icon-delete.svg"
-              alt="cart"
-              class="header__profile__cart"
-            />
+          <div class="col-3-of-4">
+            <div class="popup__content__info">
+              <div>
+                <p class="popup__title">Fall Limited Edition Sneakers</p>
+                <p class="popup__content__info__p">
+                  $125.00x3
+                  <span class="popup__content__info__span"></span>
+                </p>
+              </div>
+              <img
+                src="images/icon-delete.svg"
+                alt="cart"
+                class="popup__delete"
+              />
+            </div>
           </div>
         </div>
+        <button class="btn btn__checkout">Checkout</button>
       </div>
     </div>
+
     <div class="container">
       <header class="header">
         <div class="header__box">
@@ -74,18 +83,23 @@
           <div class="col-1-of-2">
             <section class="veiw">
               <div class="veiw__thumbnail">
-                <img
-                  src="images/image-product-1.jpg"
-                  alt="product"
-                  class="veiw__thumbnail__main"
-                />
+                <img src="" alt="product" class="veiw__thumbnail__main" />
               </div>
               <div class="row">
                 <div class="col-1-of-4">
                   <img
-                    src="images/image-product-2.jpg"
+                    src="images/image-product-1.jpg"
                     alt="product"
                     class="veiw__thumbnail__sub veiw__thumbnail__sub--active"
+                    data-id="0"
+                  />
+                </div>
+                <div class="col-1-of-4">
+                  <img
+                    src="images/image-product-2.jpg"
+                    alt="product"
+                    class="veiw__thumbnail__sub"
+                    data-id="1"
                   />
                 </div>
                 <div class="col-1-of-4">
@@ -93,6 +107,7 @@
                     src="images/image-product-3.jpg"
                     alt="product"
                     class="veiw__thumbnail__sub"
+                    data-id="2"
                   />
                 </div>
                 <div class="col-1-of-4">
@@ -100,13 +115,7 @@
                     src="images/image-product-4.jpg"
                     alt="product"
                     class="veiw__thumbnail__sub"
-                  />
-                </div>
-                <div class="col-1-of-4">
-                  <img
-                    src="images/image-product-1.jpg"
-                    alt="product"
-                    class="veiw__thumbnail__sub"
+                    data-id="3"
                   />
                 </div>
               </div>
@@ -121,8 +130,9 @@
               everything the weather can offer.
             </p>
             <div class="price">
-              <h2 class="price__h2">
-                $125.00 <span class="price__span">$250.00</span>
+              <h2>
+                <span class="price__h2"> $125.00 </span>
+                <span class="price__span">$250.00</span>
               </h2>
               <h3 class="price__h3">50%</h3>
             </div>
@@ -130,11 +140,11 @@
               <button class="order__btn order__btn--1">
                 <img src="images/icon-minus.svg" alt="" />
               </button>
-              <h2 class="order__number">0</h2>
+              <h2 class="order__number"></h2>
               <button class="order__btn order__btn--2">
                 <img src="images/icon-plus.svg" alt="" />
               </button>
-              <button class="btn__cart">
+              <button class="btn btn__cart">
                 <img
                   src="images/icon-cart.svg"
                   alt="cart"
@@ -150,8 +160,9 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Cayto</a>.
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
