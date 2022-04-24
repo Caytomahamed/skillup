@@ -1,0 +1,27 @@
+.veiw {
+
+  &__thumbnail {
+    &__main {
+      height: 36rem;
+      object-fit: cover;
+      margin-left: 4.5rem;
+      border-radius: 1rem;
+    }
+    &__sub {
+      display: block;
+      height: 8rem;
+      object-fit: cover;
+      border-radius: 1rem;
+      position: relative;
+      margin-top: 2rem 0;
+
+      &--active {
+        border: 2px solid $color-secondary;
+        opacity: 0.7;
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

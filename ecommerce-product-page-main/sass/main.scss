@@ -1,8 +1,18 @@
+@import "abstracts/variables";
+
 @import "base/bases";
 @import "base/reset";
 @import "base/typography";
 
-@import "abstracts/variables";
+
+@import "components/veiw";
+@import "components/price";
+@import "components/order";
+@import "components/buttons";
+@import "components/popups";
 
 @import "layout/grids";
 @import "layout/headers";
+
+
+

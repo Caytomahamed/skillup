@@ -1,0 +1,34 @@
+.order {
+  width: 44rem;
+  display: flex;
+  align-items: center;
+  &__number {
+    width: 6rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: $color-grayish-light;
+    color: $color-black;
+    padding: 0.8rem;
+  }
+  &__btn {
+    width: 6rem;
+    background-color: $color-grayish-light;
+    border: none;
+    padding: 1rem;
+
+    &--1 {
+      border-bottom-left-radius: 0.5rem;
+      border-top-left-radius: 0.5rem;
+    }
+
+    &--2 {
+      border-bottom-right-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      margin-right: 2.5rem;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

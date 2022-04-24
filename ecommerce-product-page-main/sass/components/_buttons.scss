@@ -1,0 +1,18 @@
+.btn {
+    &__cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 22rem;
+        background: $color-secondary;
+        color: white;
+        padding: 1.2rem 0;
+        border-radius: 1rem;
+        border:none;
+        box-shadow: 2rem 2rem 3rem rgba($color-secondary,.3);
+        &__icon {
+            width: 1.6rem;
+            margin-right: 1rem;
+        }
+    }
+}

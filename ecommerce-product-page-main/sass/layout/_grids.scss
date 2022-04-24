@@ -1,8 +1,7 @@
 .row {
   display: flex;
   margin: 1rem auto;
-  max-width: 95%;
-  width: $grid-width;
+  width:80%;
 
   &:not(:last-child) {
     margin-bottom: $grid-gutter-vertical;
@@ -12,7 +11,6 @@
 [class^="col-"] {
   background-size: cover;
   color: $color-primary;
-    background-color: red;
  &:not(:last-child) {
     margin-right: $grid-gutter-horizantal;
   }

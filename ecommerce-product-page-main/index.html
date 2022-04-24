@@ -14,55 +14,144 @@
 
     <title>Frontend Mentor | E-commerce product page</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="row header">
-      <div class="col-1-of-2">    
+    <div class="popup">
+      <div class="popup__header">
+        <h2 class="thrid__header ">Cart</h2>
+      </div>
+      <div class="popup__content">
         <div class="row">
-          <div class="col-1-of-4">
-            <img src="images/logo.svg" alt="logo">
+          <div class="col-1-of-3">
+            <img
+              src="images/icon-cart-bl.svg"
+              alt="cart"
+              class="header__profile__cart"
+            />
           </div>
-          <div class="col-3-of-4">
-            <nav class="header__menu">
-            <li class="header__mene__item">Collections</li>
-            <li class="header__mene__item">Men</li>
-            <li class="header__mene__item"> Women</li>
-            <li class="header__mene__item">n About</li>
-            <li class="header__mene__item">Contact</li>
-          </nav>
+          <div class="col-2-of-3">
+            <p>Fall Limited Edition Sneakers</p>
+            <p>$125.00x3 <span>$375.00</span></p>
+            <img
+              src="images/icon-delete.svg"
+              alt="cart"
+              class="header__profile__cart"
+            />
           </div>
         </div>
-       
-          
-      </div>
-      <div class="col-1-of-2">
-        Sneaker Company Fall Limited Edition
-    Sneakers These low-profile sneakers are your perfect casual wear companion.
-    Featuring a durable rubber outer sole, they’ll withstand everything the
-    weather can offer. $125.00 50% $250.00 0 Add to cart
       </div>
     </div>
-     Sneaker Company Fall Limited Edition
-    Sneakers These low-profile sneakers are your perfect casual wear companion.
-    Featuring a durable rubber outer sole, they’ll withstand everything the
-    weather can offer. $125.00 50% $250.00 0 Add to cart
-    
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+    <div class="container">
+      <header class="header">
+        <div class="header__box">
+          <img src="images/logo.svg" alt="logo" class="header__box__logo" />
+        </div>
+        <nav class="header__menu">
+          <li class="header__menu__item">Collections</li>
+          <li class="header__menu__item">Men</li>
+          <li class="header__menu__item">Women</li>
+          <li class="header__menu__item">About</li>
+          <li class="header__menu__item">Contact</li>
+        </nav>
+
+        <div class="header__profile">
+          <img
+            src="images/icon-cart-bl.svg"
+            alt="cart"
+            class="header__profile__cart"
+          />
+          <img
+            src="images/image-avatar.png"
+            alt="avatar"
+            class="header__profile__avatar"
+          />
+        </div>
+      </header>
+
+      <main>
+        <div class="row">
+          <div class="col-1-of-2">
+            <section class="veiw">
+              <div class="veiw__thumbnail">
+                <img
+                  src="images/image-product-1.jpg"
+                  alt="product"
+                  class="veiw__thumbnail__main"
+                />
+              </div>
+              <div class="row">
+                <div class="col-1-of-4">
+                  <img
+                    src="images/image-product-2.jpg"
+                    alt="product"
+                    class="veiw__thumbnail__sub veiw__thumbnail__sub--active"
+                  />
+                </div>
+                <div class="col-1-of-4">
+                  <img
+                    src="images/image-product-3.jpg"
+                    alt="product"
+                    class="veiw__thumbnail__sub"
+                  />
+                </div>
+                <div class="col-1-of-4">
+                  <img
+                    src="images/image-product-4.jpg"
+                    alt="product"
+                    class="veiw__thumbnail__sub"
+                  />
+                </div>
+                <div class="col-1-of-4">
+                  <img
+                    src="images/image-product-1.jpg"
+                    alt="product"
+                    class="veiw__thumbnail__sub"
+                  />
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col-1-of-2">
+            <h3 class="secondary__header">Sneaker Company</h3>
+            <h1 class="primary__header">Fall Limited Edition Sneakers</h1>
+            <p class="paragrapy">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+            <div class="price">
+              <h2 class="price__h2">
+                $125.00 <span class="price__span">$250.00</span>
+              </h2>
+              <h3 class="price__h3">50%</h3>
+            </div>
+            <div class="order">
+              <button class="order__btn order__btn--1">
+                <img src="images/icon-minus.svg" alt="" />
+              </button>
+              <h2 class="order__number">0</h2>
+              <button class="order__btn order__btn--2">
+                <img src="images/icon-plus.svg" alt="" />
+              </button>
+              <button class="btn__cart">
+                <img
+                  src="images/icon-cart.svg"
+                  alt="cart"
+                  class="btn__cart__icon"
+                />
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
     </div>
   </body>
 </html>

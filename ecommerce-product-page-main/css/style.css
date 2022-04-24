@@ -13,6 +13,13 @@ body {
   box-sizing: border-box;
   font-size: 1.6rem; }
 
+.container {
+  width: 114rem;
+  margin: 0 auto; }
+
+main {
+  margin-top: 3rem; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -63,23 +70,127 @@ body {
   font-family: "Lato", sans-serif; }
 
 .primary__header {
+  font-size: 5rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 2rem; }
+
+.secondary__header {
+  color: #ff7d1a;
   margin-top: 3rem;
-  margin-left: 3rem;
+  margin-bottom: 2rem;
   font-size: 3rem;
   font-weight: 700; }
+
+.thrid__header {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #b6bcc8; }
+
+.paragrapy {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #68707d;
+  margin-bottom: 2rem; }
+
+.veiw__thumbnail__main {
+  height: 36rem;
+  object-fit: cover;
+  margin-left: 4.5rem;
+  border-radius: 1rem; }
+
+.veiw__thumbnail__sub {
+  display: block;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  position: relative;
+  margin-top: 2rem 0; }
+  .veiw__thumbnail__sub--active {
+    border: 2px solid #ff7d1a;
+    opacity: 0.7; }
+  .veiw__thumbnail__sub:hover {
+    opacity: 0.7; }
+
+.price {
+  color: black; }
+  .price__h2 {
+    font-size: 1.8rem;
+    font-weight: 700; }
+  .price__h3 {
+    display: inline-block;
+    color: #ff7d1a;
+    background-color: rgba(255, 125, 26, 0.2);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    position: relative;
+    left: 8rem;
+    top: -3.5rem; }
+  .price__span {
+    display: block;
+    color: #b6bcc8;
+    text-decoration: line-through;
+    font-size: 1.4rem;
+    margin-top: 0.7rem; }
+
+.order {
+  width: 44rem;
+  display: flex;
+  align-items: center; }
+  .order__number {
+    width: 6rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: #f7f8fd;
+    color: black;
+    padding: 0.8rem; }
+  .order__btn {
+    width: 6rem;
+    background-color: #f7f8fd;
+    border: none;
+    padding: 1rem; }
+    .order__btn--1 {
+      border-bottom-left-radius: 0.5rem;
+      border-top-left-radius: 0.5rem; }
+    .order__btn--2 {
+      border-bottom-right-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      margin-right: 2.5rem; }
+    .order__btn:focus {
+      outline: none; }
+
+.btn__cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22rem;
+  background: #ff7d1a;
+  color: white;
+  padding: 1.2rem 0;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 2rem 2rem 3rem rgba(255, 125, 26, 0.3); }
+  .btn__cart__icon {
+    width: 1.6rem;
+    margin-right: 1rem; }
+
+.popup {
+  width: 35rem;
+  padding: 1rem;
+  box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.3); }
 
 .row {
   display: flex;
   margin: 1rem auto;
-  max-width: 95%;
-  width: 114rem; }
+  width: 80%; }
   .row:not(:last-child) {
     margin-bottom: 2rem; }
 
 [class^="col-"] {
   background-size: cover;
-  color: #ffede0;
-  background-color: red; }
+  color: #ffede0; }
   [class^="col-"]:not(:last-child) {
     margin-right: 1.6rem; }
 
@@ -101,12 +212,56 @@ body {
 .col-3-of-4 {
   width: calc(3 * ((100% - 3 *1.6rem) / 4) + 2 *1.6rem); }
 
-.header__menu {
+.header {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  font-weight: 700;
-  color: black; }
-  .header__menu__item {
-    list-style-type: none;
-    font-size: 1.6rem; }
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #b6bcc8; }
+  .header__box {
+    width: 14rem;
+    margin-right: 5rem; }
+    .header__box__logo {
+      width: 100%; }
+  .header__menu {
+    color: #68707d;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start; }
+    .header__menu__item {
+      position: relative;
+      list-style-type: none;
+      font-size: 1.4rem;
+      text-align: center;
+      margin-right: 3rem;
+      padding: 0.5rem 0; }
+      .header__menu__item::after {
+        content: "";
+        width: 100%;
+        height: 0.2rem;
+        background-color: #ff7d1a;
+        position: absolute;
+        bottom: -2.5rem;
+        left: 0;
+        display: none;
+        opacity: 0; }
+      .header__menu__item:hover {
+        color: black; }
+      .header__menu__item:hover::after {
+        display: block;
+        opacity: 1; }
+  .header__profile {
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .header__profile__cart {
+      display: block;
+      width: 2rem;
+      height: 2rem; }
+    .header__profile__avatar {
+      display: block;
+      width: 5rem;
+      height: 5rem; }
