@@ -10,16 +10,16 @@ const popupCon = document.querySelector(".popup--con");
 const popup = document.querySelector(".popup");
 const cartIcon = document.querySelector(".header__profile__cart");
 // FUNCTIONS change thummails into onther image
+let order = 1;
+orderNumber.textContent = order;
 
-orderNumber.textContent = 1;
 function wrapper() {
   selecteImage();
-  totalPrice();
   increment();
   decrement();
-
   modalOpen();
   modalclose();
+  totalPrice();
 }
 
 const selecteImage = () => {
@@ -43,47 +43,28 @@ const selecteImage = () => {
   });
 };
 
+
 const increment = () => {
   orderincrease.addEventListener("click", () => {
-    let increase = orderNumber.textContent;
-    increase++;
-    if (increase < 1) {
-      orderNumber.textContent = 1;
-    } else {
-      orderNumber.textContent = increase;
-    }
+    order++;
+    orderNumber.textContent = order;
   });
 };
 
 const decrement = () => {
   orderdecrease.addEventListener("click", () => {
-    let decrease = orderNumber.textContent;
-    decrease--;
-    if (decrease < 1) {
+    order--;
+    if (order < 1) {
       orderNumber.textContent = 1;
     } else {
-      orderNumber.textContent = decrease;
+      orderNumber.innerHTML = order;
     }
   });
 };
 
+
 const totalPrice = () => {
-  const observer = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-      if (mutation.type === "attributes") {
-        const cost = document.querySelector(".price__h2");
-        const orderPlus = orderNumber.textContent;
-        const total = parseInt(cost) * parseInt(orderPlus);
-        totalAmount.textContent =total;
-      }
-    });
-  });
-  observer.observe(orderNumber, {
-    attributes: true,
-    childList: true,
-    characterData: true,
-    subtree: true,
-  });
+  console.log(order);
 };
 
 const modalOpen = () => {
